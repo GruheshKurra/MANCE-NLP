@@ -1,0 +1,26 @@
+{
+  "model_type": "mance",
+  "architecture": "MANCETextClassifier",
+  "char_vocab_size": 39,
+  "char_embedding_dim": 100,
+  "word_hidden_dim": 128,
+  "sentence_hidden_dim": 128,
+  "num_classes": 2,
+  "max_word_length": 20,
+  "max_sentence_length": 50,
+  "dropout": 0.3,
+  "bidirectional": true,
+  "torch_dtype": "float32",
+  "transformers_version": "4.0.0",
+  "task": "text-classification",
+  "language": "en",
+  "license": "mit",
+  "tags": [
+    "character-level",
+    "morphological-awareness",
+    "text-classification",
+    "pytorch",
+    "lstm",
+    "character-embeddings"
+  ]
+}

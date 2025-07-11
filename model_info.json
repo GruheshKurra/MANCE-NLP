@@ -1,0 +1,19 @@
+{
+  "model_type": "MANCE",
+  "test_accuracy": 0.9166666666666666,
+  "char_vocab_size": 39,
+  "architecture": {
+    "char_embedding_dim": 100,
+    "word_hidden_dim": 128,
+    "sentence_hidden_dim": 128,
+    "num_classes": 2,
+    "max_word_length": 20,
+    "max_sentence_length": 50
+  },
+  "training_info": {
+    "epochs": 50,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "loss_function": "CrossEntropyLoss"
+  }
+}
