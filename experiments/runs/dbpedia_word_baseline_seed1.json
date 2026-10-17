@@ -1,0 +1,203 @@
+{
+ "dataset": "dbpedia",
+ "tag": "word_baseline",
+ "seed": 1,
+ "metric": "accuracy",
+ "result": {
+  "test": {
+   "accuracy": 98.68714285714286
+  }
+ },
+ "best_epoch": 15,
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.3471919773792935,
+   "val": {
+    "accuracy": 97.04285714285714
+   },
+   "seconds": 386
+  },
+  {
+   "epoch": 2,
+   "loss": 0.10023682397367556,
+   "val": {
+    "accuracy": 97.89642857142857
+   },
+   "seconds": 386
+  },
+  {
+   "epoch": 3,
+   "loss": 0.07844473369433914,
+   "val": {
+    "accuracy": 98.19642857142857
+   },
+   "seconds": 385
+  },
+  {
+   "epoch": 4,
+   "loss": 0.06655124586304538,
+   "val": {
+    "accuracy": 98.17857142857143
+   },
+   "seconds": 385
+  },
+  {
+   "epoch": 5,
+   "loss": 0.05900101770357715,
+   "val": {
+    "accuracy": 98.33928571428571
+   },
+   "seconds": 385
+  },
+  {
+   "epoch": 6,
+   "loss": 0.052306553531735224,
+   "val": {
+    "accuracy": 98.38214285714285
+   },
+   "seconds": 356
+  },
+  {
+   "epoch": 7,
+   "loss": 0.04749483784306004,
+   "val": {
+    "accuracy": 98.43928571428572
+   },
+   "seconds": 306
+  },
+  {
+   "epoch": 8,
+   "loss": 0.043648229382235795,
+   "val": {
+    "accuracy": 98.51428571428572
+   },
+   "seconds": 306
+  },
+  {
+   "epoch": 9,
+   "loss": 0.04055921599299386,
+   "val": {
+    "accuracy": 98.52857142857142
+   },
+   "seconds": 308
+  },
+  {
+   "epoch": 10,
+   "loss": 0.037470076359520745,
+   "val": {
+    "accuracy": 98.54285714285714
+   },
+   "seconds": 307
+  },
+  {
+   "epoch": 11,
+   "loss": 0.034561509097999474,
+   "val": {
+    "accuracy": 98.54642857142858
+   },
+   "seconds": 308
+  },
+  {
+   "epoch": 12,
+   "loss": 0.03283456826158398,
+   "val": {
+    "accuracy": 98.50714285714285
+   },
+   "seconds": 307
+  },
+  {
+   "epoch": 13,
+   "loss": 0.030930068198908298,
+   "val": {
+    "accuracy": 98.57857142857142
+   },
+   "seconds": 307
+  },
+  {
+   "epoch": 14,
+   "loss": 0.029282114084581024,
+   "val": {
+    "accuracy": 98.50714285714285
+   },
+   "seconds": 304
+  },
+  {
+   "epoch": 15,
+   "loss": 0.027281423597321545,
+   "val": {
+    "accuracy": 98.64285714285714
+   },
+   "seconds": 306
+  },
+  {
+   "epoch": 16,
+   "loss": 0.025746184135586093,
+   "val": {
+    "accuracy": 98.61428571428571
+   },
+   "seconds": 236
+  },
+  {
+   "epoch": 17,
+   "loss": 0.024882043619638715,
+   "val": {
+    "accuracy": 98.63571428571429
+   },
+   "seconds": 221
+  },
+  {
+   "epoch": 18,
+   "loss": 0.023108721786587228,
+   "val": {
+    "accuracy": 98.63571428571429
+   },
+   "seconds": 219
+  }
+ ],
+ "params": 29847566,
+ "sizes": {
+  "train": 532000,
+  "validation": 28000,
+  "test": 70000
+ },
+ "config": {
+  "dataset": "dbpedia",
+  "task": "cls",
+  "data": {
+   "max_words": 64,
+   "max_chars": 16,
+   "val_fraction": 0.05,
+   "word_min_freq": 2,
+   "vocab_size": 50000
+  },
+  "model": {
+   "embedding": "word",
+   "char_pool": "transformer",
+   "char_positions": true,
+   "char_dim": 100,
+   "dim": 512,
+   "heads": 8,
+   "char_layers": 4,
+   "word_layers": 2,
+   "ff_dim": 1024,
+   "dropout": 0.3
+  },
+  "train": {
+   "batch_size": 64,
+   "eval_batch_size": 256,
+   "lr": 0.0001,
+   "warmup_steps": 1000,
+   "grad_clip": 1.0,
+   "epochs": 20,
+   "patience": 3
+  }
+ },
+ "device": "NVIDIA GeForce RTX 4090",
+ "torch": "2.9.1+cu128",
+ "python": "3.12.3",
+ "git": "e9b231c-dirty",
+ "dataset_revision": "9abd46cf7fc8b4c64290f26993c540b92aa145ac",
+ "minutes": 95.6,
+ "finished": "2026-10-17T16:03:58"
+}

@@ -122,7 +122,14 @@ Thumbs.db
 
 # Project specific
 paper/
-figures/
+/figures/
 documentation/
 results/
 code/ 
+# Experiment caches (re-created by run.py)
+.cache/
+
+# Experiment outputs that are not committed
+.cache/
+experiments/checkpoints/
+experiments/logs/

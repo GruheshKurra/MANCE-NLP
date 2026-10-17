@@ -1,0 +1,141 @@
+{
+ "dataset": "germeval14",
+ "tag": "sweep_lr1e-4",
+ "seed": 1,
+ "metric": "f1",
+ "result": {
+  "test": {
+   "f1": 55.24552624883384,
+   "precision": 58.02601104578656,
+   "recall": 52.71932664292651
+  }
+ },
+ "best_epoch": 8,
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.8292202961444854,
+   "val": {
+    "f1": 5.060728744939271,
+    "precision": 25.862068965517242,
+    "recall": 2.804786836200449
+   },
+   "seconds": 32
+  },
+  {
+   "epoch": 2,
+   "loss": 0.3708526399930318,
+   "val": {
+    "f1": 11.051127342013336,
+    "precision": 36.63157894736842,
+    "recall": 6.507105459985041
+   },
+   "seconds": 31
+  },
+  {
+   "epoch": 3,
+   "loss": 0.3124207058350245,
+   "val": {
+    "f1": 38.5048231511254,
+    "precision": 41.615986099044314,
+    "recall": 35.82647718773373
+   },
+   "seconds": 31
+  },
+  {
+   "epoch": 4,
+   "loss": 0.2666810639301936,
+   "val": {
+    "f1": 44.51139145170401,
+    "precision": 44.82366325369738,
+    "recall": 44.203440538519075
+   },
+   "seconds": 31
+  },
+  {
+   "epoch": 5,
+   "loss": 0.23694526227315266,
+   "val": {
+    "f1": 49.95244435990109,
+    "precision": 50.83236546651181,
+    "recall": 49.10246821241586
+   },
+   "seconds": 31
+  },
+  {
+   "epoch": 6,
+   "loss": 0.21722667688131334,
+   "val": {
+    "f1": 52.57790368271955,
+    "precision": 53.10950019076688,
+    "recall": 52.05684367988033
+   },
+   "seconds": 31
+  },
+  {
+   "epoch": 7,
+   "loss": 0.2030771230260531,
+   "val": {
+    "f1": 53.64985163204747,
+    "precision": 56.95086098278035,
+    "recall": 50.71054599850411
+   },
+   "seconds": 30
+  },
+  {
+   "epoch": 8,
+   "loss": 0.19280570725599924,
+   "val": {
+    "f1": 55.334748215319316,
+    "precision": 57.15424471901156,
+    "recall": 53.62752430815259
+   },
+   "seconds": 31
+  }
+ ],
+ "params": 12734649,
+ "sizes": {
+  "train": 24000,
+  "validation": 2200,
+  "test": 5100
+ },
+ "config": {
+  "dataset": "germeval14",
+  "task": "ner",
+  "data": {
+   "max_words": 64,
+   "max_chars": 16,
+   "val_fraction": 0.05,
+   "word_min_freq": 2,
+   "vocab_size": 50000
+  },
+  "model": {
+   "embedding": "mance",
+   "char_pool": "transformer",
+   "char_positions": true,
+   "char_dim": 100,
+   "dim": 512,
+   "heads": 8,
+   "char_layers": 4,
+   "word_layers": 2,
+   "ff_dim": 1024,
+   "dropout": 0.3
+  },
+  "train": {
+   "batch_size": 64,
+   "eval_batch_size": 256,
+   "lr": 0.0001,
+   "warmup_steps": 1000,
+   "grad_clip": 1.0,
+   "epochs": 8,
+   "patience": 3
+  }
+ },
+ "device": "NVIDIA GeForce RTX 4090",
+ "torch": "2.9.1+cu128",
+ "python": "3.12.3",
+ "git": "e9b231c-dirty",
+ "dataset_revision": "aaa734fe115d9ae179fcdcaae591eeb3b0c19a4e",
+ "minutes": 4.4,
+ "finished": "2026-10-17T11:44:56"
+}

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="920" height="360" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <style>
+    .title { font-size: 17px; font-weight: 600; fill: #1b2130; }
+    .sub { font-size: 13px; fill: #52514e; }
+    .word { font-size: 15px; fill: #1b2130; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    .ch { font-size: 15px; fill: #1b2130; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; text-anchor: middle; }
+    .note { font-size: 12.5px; fill: #52514e; }
+    .unk { font-size: 13px; fill: #b3261e; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+  <rect width="920" height="360" rx="12" fill="#ffffff"/>
+
+  <!-- Left: word table -->
+  <text x="30" y="40" class="title">Word table</text>
+  <text x="30" y="60" class="sub">one learned vector per training word</text>
+
+  <g transform="translate(30,90)">
+    <text x="0" y="22" class="word">play</text>
+    <rect x="110" y="6" width="150" height="22" rx="4" fill="#d9e6f7"/>
+    <text x="0" y="62" class="word">plays</text>
+    <rect x="110" y="46" width="150" height="22" rx="4" fill="#fbe0d3"/>
+    <text x="0" y="102" class="word">played</text>
+    <rect x="110" y="86" width="150" height="22" rx="4" fill="#d6f0e6"/>
+    <text x="275" y="62" class="note">three unrelated rows</text>
+
+    <line x1="0" y1="132" x2="380" y2="132" stroke="#d5dae3" stroke-dasharray="4 4"/>
+    <text x="0" y="168" class="word">replaying</text>
+    <rect x="110" y="152" width="150" height="22" rx="4" fill="#ffffff" stroke="#b3261e" stroke-dasharray="4 3"/>
+    <text x="185" y="168" class="unk" text-anchor="middle">&lt;unk&gt;</text>
+    <text x="275" y="168" class="note">unseen: meaning lost</text>
+  </g>
+
+  <line x1="455" y1="30" x2="455" y2="325" stroke="#e3e6ec"/>
+
+  <!-- Right: MANCE -->
+  <text x="485" y="40" class="title">MANCE</text>
+  <text x="485" y="60" class="sub">a word is the ordered sequence of its characters</text>
+
+  <g transform="translate(485,90)">
+    <!-- play -->
+    <g>
+      <rect x="0" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="13" y="23" class="ch">p</text>
+      <rect x="30" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="43" y="23" class="ch">l</text>
+      <rect x="60" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="73" y="23" class="ch">a</text>
+      <rect x="90" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="103" y="23" class="ch">y</text>
+    </g>
+    <!-- plays -->
+    <g transform="translate(0,40)">
+      <rect x="0" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="13" y="23" class="ch">p</text>
+      <rect x="30" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="43" y="23" class="ch">l</text>
+      <rect x="60" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="73" y="23" class="ch">a</text>
+      <rect x="90" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="103" y="23" class="ch">y</text>
+      <rect x="120" y="4" width="26" height="26" rx="4" fill="#eb6834" fill-opacity="0.16" stroke="#eb6834"/>
+      <text x="133" y="23" class="ch">s</text>
+    </g>
+    <!-- played -->
+    <g transform="translate(0,80)">
+      <rect x="0" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="13" y="23" class="ch">p</text>
+      <rect x="30" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="43" y="23" class="ch">l</text>
+      <rect x="60" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="73" y="23" class="ch">a</text>
+      <rect x="90" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="103" y="23" class="ch">y</text>
+      <rect x="120" y="4" width="26" height="26" rx="4" fill="#eb6834" fill-opacity="0.16" stroke="#eb6834"/>
+      <text x="133" y="23" class="ch">e</text>
+      <rect x="150" y="4" width="26" height="26" rx="4" fill="#eb6834" fill-opacity="0.16" stroke="#eb6834"/>
+      <text x="163" y="23" class="ch">d</text>
+    </g>
+    <text x="200" y="62" class="note">shared stem, different endings:</text>
+    <text x="200" y="80" class="note">the model sees how they relate</text>
+
+    <line x1="0" y1="132" x2="400" y2="132" stroke="#d5dae3" stroke-dasharray="4 4"/>
+    <!-- replaying -->
+    <g transform="translate(0,146)">
+      <rect x="0" y="4" width="26" height="26" rx="4" fill="#eb6834" fill-opacity="0.16" stroke="#eb6834"/>
+      <text x="13" y="23" class="ch">r</text>
+      <rect x="30" y="4" width="26" height="26" rx="4" fill="#eb6834" fill-opacity="0.16" stroke="#eb6834"/>
+      <text x="43" y="23" class="ch">e</text>
+      <rect x="60" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="73" y="23" class="ch">p</text>
+      <rect x="90" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="103" y="23" class="ch">l</text>
+      <rect x="120" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="133" y="23" class="ch">a</text>
+      <rect x="150" y="4" width="26" height="26" rx="4" fill="#2a78d6" fill-opacity="0.16" stroke="#2a78d6"/>
+      <text x="163" y="23" class="ch">y</text>
+      <rect x="180" y="4" width="26" height="26" rx="4" fill="#eb6834" fill-opacity="0.16" stroke="#eb6834"/>
+      <text x="193" y="23" class="ch">i</text>
+      <rect x="210" y="4" width="26" height="26" rx="4" fill="#eb6834" fill-opacity="0.16" stroke="#eb6834"/>
+      <text x="223" y="23" class="ch">n</text>
+      <rect x="240" y="4" width="26" height="26" rx="4" fill="#eb6834" fill-opacity="0.16" stroke="#eb6834"/>
+      <text x="253" y="23" class="ch">g</text>
+    </g>
+    <text x="0" y="210" class="note">never seen in training, still gets a vector built from</text>
+    <text x="0" y="228" class="note">characters the model knows</text>
+  </g>
+
+  <text x="30" y="345" class="note">Vocabulary: a word table needs tens of thousands of rows; MANCE needs about 100 characters.</text>
+</svg>

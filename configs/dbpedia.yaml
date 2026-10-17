@@ -1,0 +1,31 @@
+dataset: dbpedia
+task: cls
+
+data:
+  max_words: 64
+  max_chars: 16
+  val_fraction: 0.05   # held out from train; the test split is only used once, at the end
+  word_min_freq: 2     # word baseline only
+  vocab_size: 50000    # word baseline only
+
+model:
+  embedding: mance     # mance | word
+  char_pool: transformer   # transformer | mean
+  char_positions: true
+  char_dim: 100
+  dim: 512
+  heads: 8
+  char_layers: 4
+  word_layers: 2
+  ff_dim: 1024
+  dropout: 0.3
+
+train:
+  batch_size: 64
+  eval_batch_size: 256
+  lr: 0.0001           # chosen on validation; 1e-3 stalled near 63%, see experiments/sweeps
+  warmup_steps: 1000   # linear warm-up over the first 1000 steps
+  grad_clip: 1.0
+  epochs: 20           # upper bound; early stopping on validation
+  patience: 3
+

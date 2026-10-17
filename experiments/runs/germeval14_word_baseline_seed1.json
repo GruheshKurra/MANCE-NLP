@@ -1,0 +1,211 @@
+{
+ "dataset": "germeval14",
+ "tag": "word_baseline",
+ "seed": 1,
+ "metric": "f1",
+ "result": {
+  "test": {
+   "f1": 48.15571776155718,
+   "precision": 60.38564803514767,
+   "recall": 40.04532211071544
+  }
+ },
+ "best_epoch": 12,
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.8601593794822693,
+   "val": {
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "seconds": 14
+  },
+  {
+   "epoch": 2,
+   "loss": 0.45817046562830605,
+   "val": {
+    "f1": 13.211249182472201,
+    "precision": 52.604166666666664,
+    "recall": 7.554225878833208
+   },
+   "seconds": 13
+  },
+  {
+   "epoch": 3,
+   "loss": 0.3986610067685445,
+   "val": {
+    "f1": 20.758725341426405,
+    "precision": 55.072463768115945,
+    "recall": 12.789827973074047
+   },
+   "seconds": 14
+  },
+  {
+   "epoch": 4,
+   "loss": 0.3479485911925634,
+   "val": {
+    "f1": 30.10696582311505,
+    "precision": 49.78429680759275,
+    "recall": 21.57816005983545
+   },
+   "seconds": 14
+  },
+  {
+   "epoch": 5,
+   "loss": 0.3099443614880244,
+   "val": {
+    "f1": 36.1671469740634,
+    "precision": 50.53691275167785,
+    "recall": 28.160059835452504
+   },
+   "seconds": 13
+  },
+  {
+   "epoch": 6,
+   "loss": 0.28588760924339296,
+   "val": {
+    "f1": 39.01270069494369,
+    "precision": 54.3028685790527,
+    "recall": 30.441286462228874
+   },
+   "seconds": 13
+  },
+  {
+   "epoch": 7,
+   "loss": 0.26530877431233724,
+   "val": {
+    "f1": 40.17299375300337,
+    "precision": 56.18279569892473,
+    "recall": 31.264023934181
+   },
+   "seconds": 13
+  },
+  {
+   "epoch": 8,
+   "loss": 0.24996012890338898,
+   "val": {
+    "f1": 42.80995375467958,
+    "precision": 52.062131762185324,
+    "recall": 36.35003739715781
+   },
+   "seconds": 13
+  },
+  {
+   "epoch": 9,
+   "loss": 0.23428338873386384,
+   "val": {
+    "f1": 44.61230837591646,
+    "precision": 54.95347564313081,
+    "recall": 37.54674644727001
+   },
+   "seconds": 13
+  },
+  {
+   "epoch": 10,
+   "loss": 0.22143086838722228,
+   "val": {
+    "f1": 46.44938484783078,
+    "precision": 54.92598264420623,
+    "recall": 40.23934181002244
+   },
+   "seconds": 14
+  },
+  {
+   "epoch": 11,
+   "loss": 0.2099236906170845,
+   "val": {
+    "f1": 45.51845342706503,
+    "precision": 55.16506922257721,
+    "recall": 38.7434554973822
+   },
+   "seconds": 13
+  },
+  {
+   "epoch": 12,
+   "loss": 0.20082198925813038,
+   "val": {
+    "f1": 47.866256049274085,
+    "precision": 58.119658119658126,
+    "recall": 40.68810770381451
+   },
+   "seconds": 13
+  },
+  {
+   "epoch": 13,
+   "loss": 0.19203513528903327,
+   "val": {
+    "f1": 46.915688367129135,
+    "precision": 54.6494281452014,
+    "recall": 41.09947643979058
+   },
+   "seconds": 14
+  },
+  {
+   "epoch": 14,
+   "loss": 0.18447277504205703,
+   "val": {
+    "f1": 47.53048150444306,
+    "precision": 53.11778290993071,
+    "recall": 43.00673148840688
+   },
+   "seconds": 13
+  },
+  {
+   "epoch": 15,
+   "loss": 0.17669061177968978,
+   "val": {
+    "f1": 47.57176775307576,
+    "precision": 56.25319040326697,
+    "recall": 41.21166791323859
+   },
+   "seconds": 13
+  }
+ ],
+ "params": 15725593,
+ "sizes": {
+  "train": 24000,
+  "validation": 2200,
+  "test": 5100
+ },
+ "config": {
+  "dataset": "germeval14",
+  "task": "ner",
+  "data": {
+   "max_words": 64,
+   "max_chars": 16,
+   "val_fraction": 0.05,
+   "word_min_freq": 2,
+   "vocab_size": 50000
+  },
+  "model": {
+   "embedding": "word",
+   "char_pool": "transformer",
+   "char_positions": true,
+   "char_dim": 100,
+   "dim": 512,
+   "heads": 8,
+   "char_layers": 4,
+   "word_layers": 2,
+   "ff_dim": 1024,
+   "dropout": 0.3
+  },
+  "train": {
+   "batch_size": 64,
+   "eval_batch_size": 256,
+   "lr": 0.0003,
+   "warmup_steps": 1000,
+   "grad_clip": 1.0,
+   "epochs": 20,
+   "patience": 3
+  }
+ },
+ "device": "NVIDIA GeForce RTX 4090",
+ "torch": "2.9.1+cu128",
+ "python": "3.12.3",
+ "git": "e9b231c-dirty",
+ "dataset_revision": "aaa734fe115d9ae179fcdcaae591eeb3b0c19a4e",
+ "minutes": 3.4,
+ "finished": "2026-10-17T15:07:28"
+}

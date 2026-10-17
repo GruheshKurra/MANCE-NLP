@@ -1,0 +1,407 @@
+{
+ "dataset": "ag_news",
+ "tag": "word_baseline",
+ "seed": 1,
+ "metric": "accuracy",
+ "result": {
+  "test": {
+   "accuracy": 91.89473684210526
+  },
+  "oov_rule": {
+   "test": {
+    "accuracy": 90.72368421052632
+   },
+   "drop": 1.1710526315789451,
+   "stats": {
+    "tokens": 342009,
+    "eligible": 175417,
+    "replaced": 34201,
+    "fraction": 0.10000029238996634,
+    "seed": 0,
+    "examples": [
+     [
+      "after",
+      "aftering"
+     ],
+     [
+      "Newall",
+      "Newallest"
+     ],
+     [
+      "after",
+      "aftering"
+     ],
+     [
+      "talks",
+      "talksly"
+     ],
+     [
+      "stricken",
+      "strickenly"
+     ],
+     [
+      "parent",
+      "parentes"
+     ],
+     [
+      "Spaceflight",
+      "Spaceflighter"
+     ],
+     [
+      "team",
+      "teamest"
+     ],
+     [
+      "competing",
+      "competinger"
+     ],
+     [
+      "space",
+      "spacest"
+     ],
+     [
+      "manned",
+      "manneded"
+     ],
+     [
+      "short",
+      "shorting"
+     ],
+     [
+      "amino",
+      "aminoed"
+     ],
+     [
+      "proteins",
+      "proteiner"
+     ],
+     [
+      "dawn",
+      "dawnly"
+     ],
+     [
+      "Mike",
+      "Miked"
+     ],
+     [
+      "starts",
+      "startsest"
+     ],
+     [
+      "shift",
+      "shiftly"
+     ],
+     [
+      "blur",
+      "blurly"
+     ],
+     [
+      "will",
+      "willer"
+     ]
+    ]
+   }
+  },
+  "oov_attested": {
+   "test": {
+    "accuracy": 91.90789473684211
+   },
+   "drop": -0.013157894736849585,
+   "stats": {
+    "tokens": 342009,
+    "eligible": 4800,
+    "replaced": 4800,
+    "fraction": 0.014034718384603915,
+    "seed": 0,
+    "examples": [
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "manned",
+      "manners"
+     ],
+     [
+      "charts",
+      "charters"
+     ],
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "Letter",
+      "Lettering"
+     ],
+     [
+      "educating",
+      "educates"
+     ],
+     [
+      "according",
+      "accordion"
+     ],
+     [
+      "based",
+      "basses"
+     ],
+     [
+      "Card",
+      "Carder"
+     ],
+     [
+      "cards",
+      "carder"
+     ],
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "card",
+      "carder"
+     ],
+     [
+      "cards",
+      "carder"
+     ],
+     [
+      "Group",
+      "Grouper"
+     ],
+     [
+      "group",
+      "grouper"
+     ],
+     [
+      "service",
+      "serviced"
+     ],
+     [
+      "services",
+      "serviced"
+     ],
+     [
+      "groups",
+      "grouper"
+     ],
+     [
+      "groups",
+      "grouper"
+     ],
+     [
+      "first",
+      "firstly"
+     ]
+    ]
+   }
+  }
+ },
+ "best_epoch": 16,
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.9066086963538235,
+   "val": {
+    "accuracy": 83.76666666666667
+   },
+   "seconds": 84
+  },
+  {
+   "epoch": 2,
+   "loss": 0.48390525992537453,
+   "val": {
+    "accuracy": 86.71666666666667
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 3,
+   "loss": 0.39519986799603496,
+   "val": {
+    "accuracy": 88.41666666666667
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 4,
+   "loss": 0.35102542346776133,
+   "val": {
+    "accuracy": 89.63333333333334
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 5,
+   "loss": 0.3217724398296958,
+   "val": {
+    "accuracy": 89.83333333333333
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 6,
+   "loss": 0.29507103613363506,
+   "val": {
+    "accuracy": 90.51666666666667
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 7,
+   "loss": 0.27402603160067307,
+   "val": {
+    "accuracy": 91.45
+   },
+   "seconds": 82
+  },
+  {
+   "epoch": 8,
+   "loss": 0.2584193663590083,
+   "val": {
+    "accuracy": 91.41666666666667
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 9,
+   "loss": 0.24146293215328193,
+   "val": {
+    "accuracy": 92.05
+   },
+   "seconds": 82
+  },
+  {
+   "epoch": 10,
+   "loss": 0.22722520020933598,
+   "val": {
+    "accuracy": 91.81666666666666
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 11,
+   "loss": 0.21343304938506064,
+   "val": {
+    "accuracy": 92.31666666666666
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 12,
+   "loss": 0.201570958354825,
+   "val": {
+    "accuracy": 92.08333333333333
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 13,
+   "loss": 0.19007882888101701,
+   "val": {
+    "accuracy": 92.4
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 14,
+   "loss": 0.17958389519056353,
+   "val": {
+    "accuracy": 92.36666666666666
+   },
+   "seconds": 82
+  },
+  {
+   "epoch": 15,
+   "loss": 0.1715877898325924,
+   "val": {
+    "accuracy": 92.61666666666666
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 16,
+   "loss": 0.1641231653365222,
+   "val": {
+    "accuracy": 92.78333333333333
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 17,
+   "loss": 0.1537736092895838,
+   "val": {
+    "accuracy": 92.15
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 18,
+   "loss": 0.1461587548799453,
+   "val": {
+    "accuracy": 92.63333333333334
+   },
+   "seconds": 83
+  },
+  {
+   "epoch": 19,
+   "loss": 0.13778655954420266,
+   "val": {
+    "accuracy": 92.73333333333333
+   },
+   "seconds": 83
+  }
+ ],
+ "params": 29842436,
+ "sizes": {
+  "train": 114000,
+  "validation": 6000,
+  "test": 7600
+ },
+ "config": {
+  "dataset": "ag_news",
+  "task": "cls",
+  "data": {
+   "max_words": 64,
+   "max_chars": 16,
+   "val_fraction": 0.05,
+   "word_min_freq": 2,
+   "vocab_size": 50000
+  },
+  "model": {
+   "embedding": "word",
+   "char_pool": "transformer",
+   "char_positions": true,
+   "char_dim": 100,
+   "dim": 512,
+   "heads": 8,
+   "char_layers": 4,
+   "word_layers": 2,
+   "ff_dim": 1024,
+   "dropout": 0.3
+  },
+  "train": {
+   "batch_size": 64,
+   "eval_batch_size": 256,
+   "lr": 0.0001,
+   "warmup_steps": 1000,
+   "grad_clip": 1.0,
+   "epochs": 20,
+   "patience": 3
+  },
+  "oov": {
+   "fraction": 0.1,
+   "seed": 0,
+   "lexicon": "dbpedia",
+   "min_count": 20
+  }
+ },
+ "device": "NVIDIA GeForce RTX 4090",
+ "torch": "2.9.1+cu128",
+ "python": "3.12.3",
+ "git": "e9b231c-dirty",
+ "dataset_revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+ "minutes": 26.4,
+ "finished": "2026-10-17T14:04:47"
+}

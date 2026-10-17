@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 492" width="920" height="492" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <style>
+    .h { font-size: 14px; font-weight: 600; fill: #1b2130; text-anchor: middle; }
+    .t { font-size: 12.5px; fill: #3a4252; text-anchor: middle; }
+    .m { font-size: 12px; fill: #52514e; text-anchor: middle; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    .lane { font-size: 13px; font-weight: 600; fill: #2a78d6; letter-spacing: 0.04em; }
+    .lane2 { font-size: 13px; font-weight: 600; fill: #6250d6; letter-spacing: 0.04em; }
+    .note { font-size: 12.5px; fill: #52514e; }
+    .box { fill: #f4f7fc; stroke: #2a78d6; stroke-width: 1.3; }
+    .box2 { fill: #f4f3fd; stroke: #6250d6; stroke-width: 1.3; }
+    .out { fill: #ffffff; stroke: #8a909c; stroke-width: 1.3; }
+    .arrow { stroke: #8a909c; stroke-width: 1.6; fill: none; marker-end: url(#a); }
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8a909c"/>
+    </marker>
+  </defs>
+  <rect width="920" height="492" rx="12" fill="#ffffff"/>
+
+  <text x="30" y="34" class="lane">1 · WORD ENCODER (runs once for every distinct word in the batch)</text>
+
+  <!-- Row 1 -->
+  <rect x="30" y="52" width="150" height="92" rx="8" class="box"/>
+  <text x="105" y="78" class="h">Word</text>
+  <text x="105" y="100" class="t">a token from the text</text>
+  <text x="105" y="122" class="m">"Apple"</text>
+
+  <rect x="212" y="52" width="150" height="92" rx="8" class="box"/>
+  <text x="287" y="78" class="h">Character ids</text>
+  <text x="287" y="100" class="t">~100-symbol alphabet</text>
+  <text x="287" y="122" class="m">A p p l e → [C]</text>
+
+  <rect x="394" y="52" width="150" height="92" rx="8" class="box"/>
+  <text x="469" y="78" class="h">Embed + position</text>
+  <text x="469" y="100" class="t">char vector, project,</text>
+  <text x="469" y="117" class="t">add its position</text>
+  <text x="469" y="135" class="m">[C × 512]</text>
+
+  <rect x="576" y="52" width="150" height="92" rx="8" class="box"/>
+  <text x="651" y="78" class="h">Character</text>
+  <text x="651" y="96" class="h">Transformer</text>
+  <text x="651" y="117" class="t">4 layers, 8 heads</text>
+  <text x="651" y="135" class="m">[C × 512]</text>
+
+  <rect x="758" y="52" width="150" height="92" rx="8" class="box"/>
+  <text x="833" y="78" class="h">Word vector</text>
+  <text x="833" y="100" class="t">average over the</text>
+  <text x="833" y="117" class="t">characters</text>
+  <text x="833" y="135" class="m">[512]</text>
+
+  <path d="M180,98 L210,98" class="arrow"/>
+  <path d="M362,98 L392,98" class="arrow"/>
+  <path d="M544,98 L574,98" class="arrow"/>
+  <path d="M726,98 L756,98" class="arrow"/>
+
+  <!-- wrap to row 2 -->
+  <path d="M833,144 L833,176 L105,176 L105,226" class="arrow"/>
+
+  <text x="120" y="212" class="lane2">2 · SENTENCE ENCODER</text>
+
+  <!-- Row 2 -->
+  <rect x="30" y="228" width="150" height="92" rx="8" class="box2"/>
+  <text x="105" y="254" class="h">Word sequence</text>
+  <text x="105" y="276" class="t">word vectors + word</text>
+  <text x="105" y="293" class="t">positions</text>
+  <text x="105" y="311" class="m">[W × 512]</text>
+
+  <rect x="212" y="228" width="150" height="92" rx="8" class="box2"/>
+  <text x="287" y="254" class="h">Word</text>
+  <text x="287" y="272" class="h">Transformer</text>
+  <text x="287" y="293" class="t">2 layers, 8 heads</text>
+  <text x="287" y="311" class="m">[W × 512]</text>
+
+  <path d="M180,274 L210,274" class="arrow"/>
+
+  <!-- outputs -->
+  <path d="M362,262 L392,240" class="arrow"/>
+  <path d="M362,286 L392,308" class="arrow"/>
+
+  <rect x="394" y="204" width="250" height="62" rx="8" class="out"/>
+  <text x="519" y="228" class="h">Classification</text>
+  <text x="519" y="250" class="t">average over words → one label</text>
+
+  <rect x="394" y="282" width="250" height="62" rx="8" class="out"/>
+  <text x="519" y="306" class="h">Named-entity recognition</text>
+  <text x="519" y="328" class="t">one BIO tag for every word</text>
+
+  <text x="676" y="232" class="note">AG News: 4 topics</text>
+  <text x="676" y="252" class="note">DBpedia: 14 topics</text>
+  <text x="676" y="316" class="note">GermEval 2014: 12 entity types</text>
+
+  <!-- footer -->
+  <line x1="30" y1="372" x2="890" y2="372" stroke="#e3e6ec"/>
+  <text x="30" y="398" class="note">Ablations change only the word encoder:</text>
+  <text x="30" y="420" class="note">· no character order: drop the position embedding, so "dog" and "god" look the same</text>
+  <text x="30" y="442" class="note">· averaged characters: skip the character Transformer and average the raw character vectors</text>
+  <text x="30" y="472" class="note">Word-embedding baseline: replace the whole word encoder with a word table (unseen words become &lt;unk&gt;).</text>
+</svg>

@@ -1,0 +1,123 @@
+{
+ "dataset": "dbpedia",
+ "tag": "mance",
+ "seed": 2,
+ "metric": "accuracy",
+ "result": {
+  "test": {
+   "accuracy": 98.36
+  }
+ },
+ "best_epoch": 5,
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.339261843286599,
+   "val": {
+    "accuracy": 97.05
+   },
+   "seconds": 1086
+  },
+  {
+   "epoch": 2,
+   "loss": 0.09737866510184831,
+   "val": {
+    "accuracy": 97.77857142857142
+   },
+   "seconds": 1063
+  },
+  {
+   "epoch": 3,
+   "loss": 0.08121804452798011,
+   "val": {
+    "accuracy": 98.125
+   },
+   "seconds": 1050
+  },
+  {
+   "epoch": 4,
+   "loss": 0.07330208808151405,
+   "val": {
+    "accuracy": 97.99285714285715
+   },
+   "seconds": 1054
+  },
+  {
+   "epoch": 5,
+   "loss": 0.06873031226389534,
+   "val": {
+    "accuracy": 98.32857142857142
+   },
+   "seconds": 1054
+  },
+  {
+   "epoch": 6,
+   "loss": 0.06475055763787216,
+   "val": {
+    "accuracy": 98.28928571428571
+   },
+   "seconds": 945
+  },
+  {
+   "epoch": 7,
+   "loss": 0.06233591926973692,
+   "val": {
+    "accuracy": 98.30714285714286
+   },
+   "seconds": 919
+  },
+  {
+   "epoch": 8,
+   "loss": 0.059900239858591255,
+   "val": {
+    "accuracy": 98.30357142857143
+   },
+   "seconds": 885
+  }
+ ],
+ "params": 12729006,
+ "sizes": {
+  "train": 532000,
+  "validation": 28000,
+  "test": 70000
+ },
+ "config": {
+  "dataset": "dbpedia",
+  "task": "cls",
+  "data": {
+   "max_words": 64,
+   "max_chars": 16,
+   "val_fraction": 0.05,
+   "word_min_freq": 2,
+   "vocab_size": 50000
+  },
+  "model": {
+   "embedding": "mance",
+   "char_pool": "transformer",
+   "char_positions": true,
+   "char_dim": 100,
+   "dim": 512,
+   "heads": 8,
+   "char_layers": 4,
+   "word_layers": 2,
+   "ff_dim": 1024,
+   "dropout": 0.3
+  },
+  "train": {
+   "batch_size": 64,
+   "eval_batch_size": 256,
+   "lr": 0.0001,
+   "warmup_steps": 1000,
+   "grad_clip": 1.0,
+   "epochs": 20,
+   "patience": 3
+  }
+ },
+ "device": "NVIDIA GeForce RTX 4090",
+ "torch": "2.9.1+cu128",
+ "python": "3.12.3",
+ "git": "e9b231c-dirty",
+ "dataset_revision": "9abd46cf7fc8b4c64290f26993c540b92aa145ac",
+ "minutes": 136.1,
+ "finished": "2026-10-17T14:20:39"
+}

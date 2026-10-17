@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="920" height="340" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="920" height="340" rx="12" fill="#ffffff"/>
+<text x="30.0" y="34.0" font-size="16" fill="#1b2130" text-anchor="start" font-weight="600">Test scores: MANCE vs a word-embedding baseline</text>
+<rect x="30" y="48" width="12" height="12" rx="3" fill="#2a78d6"/><text x="48.0" y="59.0" font-size="12.5" fill="#1b2130" text-anchor="start" font-weight="400">MANCE (3 seeds, mean ± sd)</text>
+<rect x="250" y="48" width="12" height="12" rx="3" fill="#eb6834"/><text x="268.0" y="59.0" font-size="12.5" fill="#1b2130" text-anchor="start" font-weight="400">word embeddings, same encoder (1 seed)</text>
+<line x1="60" y1="282.0" x2="290" y2="282.0" stroke="#e3e6ec"/>
+<text x="52.0" y="286.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">0</text>
+<line x1="60" y1="234.5" x2="290" y2="234.5" stroke="#e3e6ec"/>
+<text x="52.0" y="238.5" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">25</text>
+<line x1="60" y1="187.0" x2="290" y2="187.0" stroke="#e3e6ec"/>
+<text x="52.0" y="191.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">50</text>
+<line x1="60" y1="139.5" x2="290" y2="139.5" stroke="#e3e6ec"/>
+<text x="52.0" y="143.5" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">75</text>
+<line x1="60" y1="92.0" x2="290" y2="92.0" stroke="#e3e6ec"/>
+<text x="52.0" y="96.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">100</text>
+<path d="M100.0,282.0 L100.0,113.1 Q100.0,109.1 104.0,109.1 L160.0,109.1 Q164.0,109.1 164.0,113.1 L164.0,282.0 Z" fill="#2a78d6"/>
+<line x1="132" y1="108.5" x2="132" y2="109.8" stroke="#1b2130" stroke-width="1.5"/>
+<text x="132.0" y="100.5" font-size="13" fill="#1b2130" text-anchor="middle" font-weight="600">91.0</text>
+<path d="M186.0,282.0 L186.0,111.4 Q186.0,107.4 190.0,107.4 L246.0,107.4 Q250.0,107.4 250.0,111.4 L250.0,282.0 Z" fill="#eb6834"/>
+<text x="218.0" y="99.4" font-size="13" fill="#1b2130" text-anchor="middle" font-weight="600">91.9</text>
+<text x="175.0" y="304.0" font-size="13.5" fill="#1b2130" text-anchor="middle" font-weight="600">AG News</text>
+<text x="175.0" y="322.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">accuracy (%)</text>
+<line x1="350" y1="282.0" x2="580" y2="282.0" stroke="#e3e6ec"/>
+<text x="342.0" y="286.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">0</text>
+<line x1="350" y1="234.5" x2="580" y2="234.5" stroke="#e3e6ec"/>
+<text x="342.0" y="238.5" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">25</text>
+<line x1="350" y1="187.0" x2="580" y2="187.0" stroke="#e3e6ec"/>
+<text x="342.0" y="191.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">50</text>
+<line x1="350" y1="139.5" x2="580" y2="139.5" stroke="#e3e6ec"/>
+<text x="342.0" y="143.5" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">75</text>
+<line x1="350" y1="92.0" x2="580" y2="92.0" stroke="#e3e6ec"/>
+<text x="342.0" y="96.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">100</text>
+<path d="M390.0,282.0 L390.0,98.9 Q390.0,94.9 394.0,94.9 L450.0,94.9 Q454.0,94.9 454.0,98.9 L454.0,282.0 Z" fill="#2a78d6"/>
+<line x1="422" y1="94.7" x2="422" y2="95.1" stroke="#1b2130" stroke-width="1.5"/>
+<text x="422.0" y="86.7" font-size="13" fill="#1b2130" text-anchor="middle" font-weight="600">98.5</text>
+<path d="M476.0,282.0 L476.0,98.5 Q476.0,94.5 480.0,94.5 L536.0,94.5 Q540.0,94.5 540.0,98.5 L540.0,282.0 Z" fill="#eb6834"/>
+<text x="508.0" y="86.5" font-size="13" fill="#1b2130" text-anchor="middle" font-weight="600">98.7</text>
+<text x="465.0" y="304.0" font-size="13.5" fill="#1b2130" text-anchor="middle" font-weight="600">DBpedia</text>
+<text x="465.0" y="322.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">accuracy (%)</text>
+<line x1="640" y1="282.0" x2="870" y2="282.0" stroke="#e3e6ec"/>
+<text x="632.0" y="286.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">0</text>
+<line x1="640" y1="234.5" x2="870" y2="234.5" stroke="#e3e6ec"/>
+<text x="632.0" y="238.5" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">25</text>
+<line x1="640" y1="187.0" x2="870" y2="187.0" stroke="#e3e6ec"/>
+<text x="632.0" y="191.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">50</text>
+<line x1="640" y1="139.5" x2="870" y2="139.5" stroke="#e3e6ec"/>
+<text x="632.0" y="143.5" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">75</text>
+<line x1="640" y1="92.0" x2="870" y2="92.0" stroke="#e3e6ec"/>
+<text x="632.0" y="96.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="400">100</text>
+<path d="M680.0,282.0 L680.0,166.3 Q680.0,162.3 684.0,162.3 L740.0,162.3 Q744.0,162.3 744.0,166.3 L744.0,282.0 Z" fill="#2a78d6"/>
+<line x1="712" y1="160.1" x2="712" y2="164.5" stroke="#1b2130" stroke-width="1.5"/>
+<text x="712.0" y="152.1" font-size="13" fill="#1b2130" text-anchor="middle" font-weight="600">63.0</text>
+<path d="M766.0,282.0 L766.0,194.5 Q766.0,190.5 770.0,190.5 L826.0,190.5 Q830.0,190.5 830.0,194.5 L830.0,282.0 Z" fill="#eb6834"/>
+<text x="798.0" y="182.5" font-size="13" fill="#1b2130" text-anchor="middle" font-weight="600">48.2</text>
+<text x="755.0" y="304.0" font-size="13.5" fill="#1b2130" text-anchor="middle" font-weight="600">GermEval 2014</text>
+<text x="755.0" y="322.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">entity F1</text>
+</svg>

@@ -1,0 +1,6 @@
+torch>=2.3
+datasets>=3.0
+huggingface_hub
+seqeval>=1.2
+pyyaml
+numpy

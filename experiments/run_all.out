@@ -1,0 +1,10 @@
+| Dataset | Model | Paper | Measured | Seeds | Unseen-variant drop: paper | rule set | attested set | Params |
+|---|---|---|---|---|---|---|---|---|
+| ag_news | avg_chars | 92.3 | 85.38 | 1 | – | 0.82 (10.0% of words) | 0.11 (1.4% of words) | 4.3M |
+| ag_news | mance | 93.5 | 90.99 ± 0.34 | 3 | 1.5 | 0.51 ± 0.14 (10.0% of words) | 0.00 ± 0.03 (1.4% of words) | 12.7M |
+| ag_news | no_char_order | 91.8 | 90.08 | 1 | – | 0.86 (10.0% of words) | 0.07 (1.4% of words) | 12.7M |
+| ag_news | word_baseline | 91.2 | 91.89 | 1 | 8.4 | 1.17 (10.0% of words) | -0.01 (1.4% of words) | 29.8M |
+| dbpedia | mance | 99.0 | 98.48 ± 0.11 | 3 | – | – | – | 12.7M |
+| dbpedia | word_baseline | – | 98.69 | 1 | – | – | – | 29.8M |
+| germeval14 | mance | 81.3 | 63.02 ± 1.15 | 3 | – | – | – | 12.7M |
+| germeval14 | word_baseline | – | 48.16 | 1 | – | – | – | 15.7M |

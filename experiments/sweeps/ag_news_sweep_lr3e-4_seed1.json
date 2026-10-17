@@ -1,0 +1,279 @@
+{
+ "dataset": "ag_news",
+ "tag": "sweep_lr3e-4",
+ "seed": 1,
+ "metric": "accuracy",
+ "result": {
+  "test": {
+   "accuracy": 87.25
+  },
+  "oov_rule": {
+   "test": {
+    "accuracy": 86.55263157894737
+   },
+   "drop": 0.6973684210526301,
+   "stats": {
+    "tokens": 342009,
+    "eligible": 175417,
+    "replaced": 34201,
+    "fraction": 0.10000029238996634,
+    "seed": 0,
+    "examples": [
+     [
+      "after",
+      "aftering"
+     ],
+     [
+      "Newall",
+      "Newallest"
+     ],
+     [
+      "after",
+      "aftering"
+     ],
+     [
+      "talks",
+      "talksly"
+     ],
+     [
+      "stricken",
+      "strickenly"
+     ],
+     [
+      "parent",
+      "parentes"
+     ],
+     [
+      "Spaceflight",
+      "Spaceflighter"
+     ],
+     [
+      "team",
+      "teamest"
+     ],
+     [
+      "competing",
+      "competinger"
+     ],
+     [
+      "space",
+      "spacest"
+     ],
+     [
+      "manned",
+      "manneded"
+     ],
+     [
+      "short",
+      "shorting"
+     ],
+     [
+      "amino",
+      "aminoed"
+     ],
+     [
+      "proteins",
+      "proteiner"
+     ],
+     [
+      "dawn",
+      "dawnly"
+     ],
+     [
+      "Mike",
+      "Miked"
+     ],
+     [
+      "starts",
+      "startsest"
+     ],
+     [
+      "shift",
+      "shiftly"
+     ],
+     [
+      "blur",
+      "blurly"
+     ],
+     [
+      "will",
+      "willer"
+     ]
+    ]
+   }
+  },
+  "oov_attested": {
+   "test": {
+    "accuracy": 87.13157894736842
+   },
+   "drop": 0.11842105263157521,
+   "stats": {
+    "tokens": 342009,
+    "eligible": 4800,
+    "replaced": 4800,
+    "fraction": 0.014034718384603915,
+    "seed": 0,
+    "examples": [
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "manned",
+      "manners"
+     ],
+     [
+      "charts",
+      "charters"
+     ],
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "Letter",
+      "Lettering"
+     ],
+     [
+      "educating",
+      "educates"
+     ],
+     [
+      "according",
+      "accordion"
+     ],
+     [
+      "based",
+      "basses"
+     ],
+     [
+      "Card",
+      "Carder"
+     ],
+     [
+      "cards",
+      "carder"
+     ],
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "card",
+      "carder"
+     ],
+     [
+      "cards",
+      "carder"
+     ],
+     [
+      "Group",
+      "Grouper"
+     ],
+     [
+      "group",
+      "grouper"
+     ],
+     [
+      "service",
+      "serviced"
+     ],
+     [
+      "services",
+      "serviced"
+     ],
+     [
+      "groups",
+      "grouper"
+     ],
+     [
+      "groups",
+      "grouper"
+     ],
+     [
+      "first",
+      "firstly"
+     ]
+    ]
+   }
+  }
+ },
+ "best_epoch": 3,
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.776845569696223,
+   "val": {
+    "accuracy": 81.2
+   },
+   "seconds": 205
+  },
+  {
+   "epoch": 2,
+   "loss": 0.4567995417265244,
+   "val": {
+    "accuracy": 85.61666666666666
+   },
+   "seconds": 147
+  },
+  {
+   "epoch": 3,
+   "loss": 0.41783686549173865,
+   "val": {
+    "accuracy": 87.36666666666666
+   },
+   "seconds": 119
+  }
+ ],
+ "params": 12723876,
+ "sizes": {
+  "train": 114000,
+  "validation": 6000,
+  "test": 7600
+ },
+ "config": {
+  "dataset": "ag_news",
+  "task": "cls",
+  "data": {
+   "max_words": 64,
+   "max_chars": 16,
+   "val_fraction": 0.05,
+   "word_min_freq": 2,
+   "vocab_size": 50000
+  },
+  "model": {
+   "embedding": "mance",
+   "char_pool": "transformer",
+   "char_positions": true,
+   "char_dim": 100,
+   "dim": 512,
+   "heads": 8,
+   "char_layers": 4,
+   "word_layers": 2,
+   "ff_dim": 1024,
+   "dropout": 0.3
+  },
+  "train": {
+   "batch_size": 64,
+   "eval_batch_size": 256,
+   "lr": 0.0003,
+   "warmup_steps": 1000,
+   "grad_clip": 1.0,
+   "epochs": 3,
+   "patience": 3
+  },
+  "oov": {
+   "fraction": 0.1,
+   "seed": 0,
+   "lexicon": "dbpedia",
+   "min_count": 20
+  }
+ },
+ "device": "NVIDIA GeForce RTX 4090",
+ "torch": "2.9.1+cu128",
+ "python": "3.12.3",
+ "git": "e9b231c-dirty",
+ "dataset_revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+ "minutes": 8.0,
+ "finished": "2026-10-17T11:48:27"
+}

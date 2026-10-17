@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" width="920" height="300" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="920" height="300" rx="12" fill="#ffffff"/>
+<text x="30.0" y="34.0" font-size="16" fill="#1b2130" text-anchor="start" font-weight="600">AG News: what each part contributes</text>
+<text x="300.0" y="64.0" font-size="12.5" fill="#52514e" text-anchor="start" font-weight="400">test accuracy (%)</text>
+<line x1="300.0" y1="76" x2="300.0" y2="246" stroke="#e3e6ec"/>
+<text x="300.0" y="264.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">80</text>
+<line x1="386.7" y1="76" x2="386.7" y2="246" stroke="#e3e6ec"/>
+<text x="386.7" y="264.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">85</text>
+<line x1="473.3" y1="76" x2="473.3" y2="246" stroke="#e3e6ec"/>
+<text x="473.3" y="264.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">90</text>
+<line x1="560.0" y1="76" x2="560.0" y2="246" stroke="#e3e6ec"/>
+<text x="560.0" y="264.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">95</text>
+<text x="640.0" y="64.0" font-size="12.5" fill="#52514e" text-anchor="start" font-weight="400">drop with 10% unseen variants (points)</text>
+<line x1="640.0" y1="76" x2="640.0" y2="246" stroke="#e3e6ec"/>
+<text x="640.0" y="264.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">0</text>
+<line x1="720.0" y1="76" x2="720.0" y2="246" stroke="#e3e6ec"/>
+<text x="720.0" y="264.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">0.5</text>
+<line x1="800.0" y1="76" x2="800.0" y2="246" stroke="#e3e6ec"/>
+<text x="800.0" y="264.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">1</text>
+<line x1="880.0" y1="76" x2="880.0" y2="246" stroke="#e3e6ec"/>
+<text x="880.0" y="264.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="400">1.5</text>
+<text x="30.0" y="104.0" font-size="13" fill="#1b2130" text-anchor="start" font-weight="400">MANCE (character Transformer, ordered)</text>
+<line x1="484.6" y1="100" x2="496.4" y2="100" stroke="#2a78d6" stroke-width="2"/>
+<circle cx="490.5" cy="100" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="502.5" y="104.0" font-size="12.5" fill="#1b2130" text-anchor="start" font-weight="600">91.0</text>
+<rect x="640" y="91" width="82.1" height="18" rx="4" fill="#2a78d6"/>
+<text x="730.1" y="104.0" font-size="12.5" fill="#1b2130" text-anchor="start" font-weight="600">0.51</text>
+<text x="30.0" y="146.0" font-size="13" fill="#1b2130" text-anchor="start" font-weight="400">no character order</text>
+<circle cx="474.7" cy="142" r="6" fill="#1b2130" stroke="#ffffff" stroke-width="2"/>
+<text x="486.7" y="146.0" font-size="12.5" fill="#1b2130" text-anchor="start" font-weight="600">90.1</text>
+<rect x="640" y="133" width="136.8" height="18" rx="4" fill="#1b2130"/>
+<text x="784.8" y="146.0" font-size="12.5" fill="#1b2130" text-anchor="start" font-weight="600">0.86</text>
+<text x="30.0" y="188.0" font-size="13" fill="#1b2130" text-anchor="start" font-weight="400">averaged characters, no Transformer</text>
+<circle cx="393.3" cy="184" r="6" fill="#1b2130" stroke="#ffffff" stroke-width="2"/>
+<text x="405.3" y="188.0" font-size="12.5" fill="#1b2130" text-anchor="start" font-weight="600">85.4</text>
+<rect x="640" y="175" width="130.5" height="18" rx="4" fill="#1b2130"/>
+<text x="778.5" y="188.0" font-size="12.5" fill="#1b2130" text-anchor="start" font-weight="600">0.82</text>
+<text x="30.0" y="230.0" font-size="13" fill="#1b2130" text-anchor="start" font-weight="400">word embeddings</text>
+<circle cx="506.2" cy="226" r="6" fill="#eb6834" stroke="#ffffff" stroke-width="2"/>
+<text x="518.2" y="230.0" font-size="12.5" fill="#1b2130" text-anchor="start" font-weight="600">91.9</text>
+<rect x="640" y="217" width="187.4" height="18" rx="4" fill="#eb6834"/>
+<text x="835.4" y="230.0" font-size="12.5" fill="#1b2130" text-anchor="start" font-weight="600">1.17</text>
+<text x="30.0" y="290.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400">MANCE: mean of 3 seeds (line = ± sd). Other rows: 1 seed.</text>
+</svg>

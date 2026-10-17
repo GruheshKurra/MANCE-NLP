@@ -1,0 +1,335 @@
+{
+ "dataset": "ag_news",
+ "tag": "mance",
+ "seed": 2,
+ "metric": "accuracy",
+ "result": {
+  "test": {
+   "accuracy": 90.89473684210526
+  },
+  "oov_rule": {
+   "test": {
+    "accuracy": 90.22368421052632
+   },
+   "drop": 0.6710526315789451,
+   "stats": {
+    "tokens": 342009,
+    "eligible": 175419,
+    "replaced": 34201,
+    "fraction": 0.10000029238996634,
+    "seed": 0,
+    "examples": [
+     [
+      "after",
+      "aftes"
+     ],
+     [
+      "Newall",
+      "Newalles"
+     ],
+     [
+      "after",
+      "afting"
+     ],
+     [
+      "talks",
+      "talkss"
+     ],
+     [
+      "stricken",
+      "strickening"
+     ],
+     [
+      "parent",
+      "parentes"
+     ],
+     [
+      "Spaceflight",
+      "Spaceflighted"
+     ],
+     [
+      "team",
+      "teamly"
+     ],
+     [
+      "competing",
+      "competinging"
+     ],
+     [
+      "space",
+      "spacer"
+     ],
+     [
+      "manned",
+      "mannedly"
+     ],
+     [
+      "short",
+      "shorting"
+     ],
+     [
+      "amino",
+      "aminoest"
+     ],
+     [
+      "proteins",
+      "proteinsly"
+     ],
+     [
+      "dawn",
+      "dawning"
+     ],
+     [
+      "Mike",
+      "Mikely"
+     ],
+     [
+      "starts",
+      "startly"
+     ],
+     [
+      "shift",
+      "shiftly"
+     ],
+     [
+      "blur",
+      "blurly"
+     ],
+     [
+      "will",
+      "willes"
+     ]
+    ]
+   }
+  },
+  "oov_attested": {
+   "test": {
+    "accuracy": 90.88157894736842
+   },
+   "drop": 0.013157894736835374,
+   "stats": {
+    "tokens": 342009,
+    "eligible": 4442,
+    "replaced": 4442,
+    "fraction": 0.012987962305085539,
+    "seed": 0,
+    "examples": [
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "manned",
+      "manners"
+     ],
+     [
+      "charts",
+      "charters"
+     ],
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "Letter",
+      "Lettering"
+     ],
+     [
+      "educating",
+      "educates"
+     ],
+     [
+      "according",
+      "accorded"
+     ],
+     [
+      "based",
+      "basses"
+     ],
+     [
+      "Card",
+      "Carder"
+     ],
+     [
+      "cards",
+      "carder"
+     ],
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "card",
+      "carder"
+     ],
+     [
+      "cards",
+      "carder"
+     ],
+     [
+      "Group",
+      "Grouper"
+     ],
+     [
+      "group",
+      "grouper"
+     ],
+     [
+      "groups",
+      "grouper"
+     ],
+     [
+      "groups",
+      "grouper"
+     ],
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "joint",
+      "jointed"
+     ],
+     [
+      "early",
+      "eared"
+     ]
+    ]
+   }
+  }
+ },
+ "best_epoch": 7,
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.8681753492181417,
+   "val": {
+    "accuracy": 84.76666666666667
+   },
+   "seconds": 220
+  },
+  {
+   "epoch": 2,
+   "loss": 0.4192447095239738,
+   "val": {
+    "accuracy": 88.28333333333333
+   },
+   "seconds": 229
+  },
+  {
+   "epoch": 3,
+   "loss": 0.3498950421007394,
+   "val": {
+    "accuracy": 89.68333333333334
+   },
+   "seconds": 207
+  },
+  {
+   "epoch": 4,
+   "loss": 0.31534389038512733,
+   "val": {
+    "accuracy": 89.91666666666667
+   },
+   "seconds": 241
+  },
+  {
+   "epoch": 5,
+   "loss": 0.29335802687304857,
+   "val": {
+    "accuracy": 89.8
+   },
+   "seconds": 240
+  },
+  {
+   "epoch": 6,
+   "loss": 0.2754387068577888,
+   "val": {
+    "accuracy": 90.5
+   },
+   "seconds": 241
+  },
+  {
+   "epoch": 7,
+   "loss": 0.2642496806035272,
+   "val": {
+    "accuracy": 91.18333333333334
+   },
+   "seconds": 241
+  },
+  {
+   "epoch": 8,
+   "loss": 0.25145766099728856,
+   "val": {
+    "accuracy": 90.96666666666667
+   },
+   "seconds": 240
+  },
+  {
+   "epoch": 9,
+   "loss": 0.2415843582748698,
+   "val": {
+    "accuracy": 91.15
+   },
+   "seconds": 241
+  },
+  {
+   "epoch": 10,
+   "loss": 0.2329269039008754,
+   "val": {
+    "accuracy": 90.18333333333334
+   },
+   "seconds": 240
+  }
+ ],
+ "params": 12723876,
+ "sizes": {
+  "train": 114000,
+  "validation": 6000,
+  "test": 7600
+ },
+ "config": {
+  "dataset": "ag_news",
+  "task": "cls",
+  "data": {
+   "max_words": 64,
+   "max_chars": 16,
+   "val_fraction": 0.05,
+   "word_min_freq": 2,
+   "vocab_size": 50000
+  },
+  "model": {
+   "embedding": "mance",
+   "char_pool": "transformer",
+   "char_positions": true,
+   "char_dim": 100,
+   "dim": 512,
+   "heads": 8,
+   "char_layers": 4,
+   "word_layers": 2,
+   "ff_dim": 1024,
+   "dropout": 0.3
+  },
+  "train": {
+   "batch_size": 64,
+   "eval_batch_size": 256,
+   "lr": 0.0001,
+   "warmup_steps": 1000,
+   "grad_clip": 1.0,
+   "epochs": 20,
+   "patience": 3
+  },
+  "oov": {
+   "fraction": 0.1,
+   "seed": 0,
+   "lexicon": "dbpedia",
+   "min_count": 20
+  }
+ },
+ "device": "NVIDIA GeForce RTX 4090",
+ "torch": "2.9.1+cu128",
+ "python": "3.12.3",
+ "git": "e9b231c-dirty",
+ "dataset_revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+ "minutes": 40.2,
+ "finished": "2026-10-17T12:35:38"
+}

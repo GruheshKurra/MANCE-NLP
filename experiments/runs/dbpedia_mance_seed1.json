@@ -1,0 +1,187 @@
+{
+ "dataset": "dbpedia",
+ "tag": "mance",
+ "seed": 1,
+ "metric": "accuracy",
+ "result": {
+  "test": {
+   "accuracy": 98.49428571428571
+  }
+ },
+ "best_epoch": 13,
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.34171115182712986,
+   "val": {
+    "accuracy": 96.78928571428571
+   },
+   "seconds": 1042
+  },
+  {
+   "epoch": 2,
+   "loss": 0.09814509132877665,
+   "val": {
+    "accuracy": 97.64285714285714
+   },
+   "seconds": 1086
+  },
+  {
+   "epoch": 3,
+   "loss": 0.08206607663234756,
+   "val": {
+    "accuracy": 97.875
+   },
+   "seconds": 1027
+  },
+  {
+   "epoch": 4,
+   "loss": 0.07369014906216245,
+   "val": {
+    "accuracy": 98.10714285714286
+   },
+   "seconds": 1085
+  },
+  {
+   "epoch": 5,
+   "loss": 0.06880027474269754,
+   "val": {
+    "accuracy": 98.21071428571429
+   },
+   "seconds": 1052
+  },
+  {
+   "epoch": 6,
+   "loss": 0.06493985950279096,
+   "val": {
+    "accuracy": 98.25
+   },
+   "seconds": 1005
+  },
+  {
+   "epoch": 7,
+   "loss": 0.06176917624204874,
+   "val": {
+    "accuracy": 98.28928571428571
+   },
+   "seconds": 922
+  },
+  {
+   "epoch": 8,
+   "loss": 0.059967973365533674,
+   "val": {
+    "accuracy": 98.24285714285715
+   },
+   "seconds": 902
+  },
+  {
+   "epoch": 9,
+   "loss": 0.05799792059510677,
+   "val": {
+    "accuracy": 98.27857142857142
+   },
+   "seconds": 881
+  },
+  {
+   "epoch": 10,
+   "loss": 0.05647784629611494,
+   "val": {
+    "accuracy": 98.375
+   },
+   "seconds": 925
+  },
+  {
+   "epoch": 11,
+   "loss": 0.05507695991297205,
+   "val": {
+    "accuracy": 98.36785714285715
+   },
+   "seconds": 929
+  },
+  {
+   "epoch": 12,
+   "loss": 0.05402394530594055,
+   "val": {
+    "accuracy": 98.36071428571428
+   },
+   "seconds": 776
+  },
+  {
+   "epoch": 13,
+   "loss": 0.052598053280702856,
+   "val": {
+    "accuracy": 98.53928571428571
+   },
+   "seconds": 638
+  },
+  {
+   "epoch": 14,
+   "loss": 0.05165351519707766,
+   "val": {
+    "accuracy": 98.39642857142857
+   },
+   "seconds": 637
+  },
+  {
+   "epoch": 15,
+   "loss": 0.05099852202384212,
+   "val": {
+    "accuracy": 98.4
+   },
+   "seconds": 637
+  },
+  {
+   "epoch": 16,
+   "loss": 0.050193396575178004,
+   "val": {
+    "accuracy": 98.44285714285714
+   },
+   "seconds": 639
+  }
+ ],
+ "params": 12729006,
+ "sizes": {
+  "train": 532000,
+  "validation": 28000,
+  "test": 70000
+ },
+ "config": {
+  "dataset": "dbpedia",
+  "task": "cls",
+  "data": {
+   "max_words": 64,
+   "max_chars": 16,
+   "val_fraction": 0.05,
+   "word_min_freq": 2,
+   "vocab_size": 50000
+  },
+  "model": {
+   "embedding": "mance",
+   "char_pool": "transformer",
+   "char_positions": true,
+   "char_dim": 100,
+   "dim": 512,
+   "heads": 8,
+   "char_layers": 4,
+   "word_layers": 2,
+   "ff_dim": 1024,
+   "dropout": 0.3
+  },
+  "train": {
+   "batch_size": 64,
+   "eval_batch_size": 256,
+   "lr": 0.0001,
+   "warmup_steps": 1000,
+   "grad_clip": 1.0,
+   "epochs": 20,
+   "patience": 3
+  }
+ },
+ "device": "NVIDIA GeForce RTX 4090",
+ "torch": "2.9.1+cu128",
+ "python": "3.12.3",
+ "git": "e9b231c-dirty",
+ "dataset_revision": "9abd46cf7fc8b4c64290f26993c540b92aa145ac",
+ "minutes": 238.2,
+ "finished": "2026-10-17T15:53:35"
+}

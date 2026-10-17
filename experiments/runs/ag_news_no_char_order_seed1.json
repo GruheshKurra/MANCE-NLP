@@ -1,0 +1,359 @@
+{
+ "dataset": "ag_news",
+ "tag": "no_char_order",
+ "seed": 1,
+ "metric": "accuracy",
+ "result": {
+  "test": {
+   "accuracy": 90.07894736842105
+  },
+  "oov_rule": {
+   "test": {
+    "accuracy": 89.22368421052632
+   },
+   "drop": 0.8552631578947398,
+   "stats": {
+    "tokens": 342009,
+    "eligible": 175417,
+    "replaced": 34201,
+    "fraction": 0.10000029238996634,
+    "seed": 0,
+    "examples": [
+     [
+      "after",
+      "aftering"
+     ],
+     [
+      "Newall",
+      "Newallest"
+     ],
+     [
+      "after",
+      "aftering"
+     ],
+     [
+      "talks",
+      "talksly"
+     ],
+     [
+      "stricken",
+      "strickenly"
+     ],
+     [
+      "parent",
+      "parentes"
+     ],
+     [
+      "Spaceflight",
+      "Spaceflighter"
+     ],
+     [
+      "team",
+      "teamest"
+     ],
+     [
+      "competing",
+      "competinger"
+     ],
+     [
+      "space",
+      "spacest"
+     ],
+     [
+      "manned",
+      "manneded"
+     ],
+     [
+      "short",
+      "shorting"
+     ],
+     [
+      "amino",
+      "aminoed"
+     ],
+     [
+      "proteins",
+      "proteiner"
+     ],
+     [
+      "dawn",
+      "dawnly"
+     ],
+     [
+      "Mike",
+      "Miked"
+     ],
+     [
+      "starts",
+      "startsest"
+     ],
+     [
+      "shift",
+      "shiftly"
+     ],
+     [
+      "blur",
+      "blurly"
+     ],
+     [
+      "will",
+      "willer"
+     ]
+    ]
+   }
+  },
+  "oov_attested": {
+   "test": {
+    "accuracy": 90.01315789473684
+   },
+   "drop": 0.0657894736842195,
+   "stats": {
+    "tokens": 342009,
+    "eligible": 4800,
+    "replaced": 4800,
+    "fraction": 0.014034718384603915,
+    "seed": 0,
+    "examples": [
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "manned",
+      "manners"
+     ],
+     [
+      "charts",
+      "charters"
+     ],
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "Letter",
+      "Lettering"
+     ],
+     [
+      "educating",
+      "educates"
+     ],
+     [
+      "according",
+      "accordion"
+     ],
+     [
+      "based",
+      "basses"
+     ],
+     [
+      "Card",
+      "Carder"
+     ],
+     [
+      "cards",
+      "carder"
+     ],
+     [
+      "first",
+      "firstly"
+     ],
+     [
+      "card",
+      "carder"
+     ],
+     [
+      "cards",
+      "carder"
+     ],
+     [
+      "Group",
+      "Grouper"
+     ],
+     [
+      "group",
+      "grouper"
+     ],
+     [
+      "service",
+      "serviced"
+     ],
+     [
+      "services",
+      "serviced"
+     ],
+     [
+      "groups",
+      "grouper"
+     ],
+     [
+      "groups",
+      "grouper"
+     ],
+     [
+      "first",
+      "firstly"
+     ]
+    ]
+   }
+  }
+ },
+ "best_epoch": 10,
+ "history": [
+  {
+   "epoch": 1,
+   "loss": 0.8688619924180302,
+   "val": {
+    "accuracy": 80.06666666666666
+   },
+   "seconds": 193
+  },
+  {
+   "epoch": 2,
+   "loss": 0.4752241663559519,
+   "val": {
+    "accuracy": 86.26666666666667
+   },
+   "seconds": 191
+  },
+  {
+   "epoch": 3,
+   "loss": 0.4069515487427931,
+   "val": {
+    "accuracy": 88.25
+   },
+   "seconds": 196
+  },
+  {
+   "epoch": 4,
+   "loss": 0.37007835967305264,
+   "val": {
+    "accuracy": 88.6
+   },
+   "seconds": 201
+  },
+  {
+   "epoch": 5,
+   "loss": 0.34756479812859153,
+   "val": {
+    "accuracy": 89.63333333333334
+   },
+   "seconds": 200
+  },
+  {
+   "epoch": 6,
+   "loss": 0.3258952440821496,
+   "val": {
+    "accuracy": 90.05
+   },
+   "seconds": 201
+  },
+  {
+   "epoch": 7,
+   "loss": 0.3085605064626495,
+   "val": {
+    "accuracy": 90.2
+   },
+   "seconds": 200
+  },
+  {
+   "epoch": 8,
+   "loss": 0.2969560154392797,
+   "val": {
+    "accuracy": 90.86666666666666
+   },
+   "seconds": 202
+  },
+  {
+   "epoch": 9,
+   "loss": 0.28643004889741086,
+   "val": {
+    "accuracy": 89.8
+   },
+   "seconds": 200
+  },
+  {
+   "epoch": 10,
+   "loss": 0.28073764502099063,
+   "val": {
+    "accuracy": 91.4
+   },
+   "seconds": 201
+  },
+  {
+   "epoch": 11,
+   "loss": 0.27105727086029735,
+   "val": {
+    "accuracy": 91.21666666666667
+   },
+   "seconds": 200
+  },
+  {
+   "epoch": 12,
+   "loss": 0.2621437275299319,
+   "val": {
+    "accuracy": 90.88333333333334
+   },
+   "seconds": 200
+  },
+  {
+   "epoch": 13,
+   "loss": 0.25773298354060564,
+   "val": {
+    "accuracy": 91.13333333333334
+   },
+   "seconds": 200
+  }
+ ],
+ "params": 12715684,
+ "sizes": {
+  "train": 114000,
+  "validation": 6000,
+  "test": 7600
+ },
+ "config": {
+  "dataset": "ag_news",
+  "task": "cls",
+  "data": {
+   "max_words": 64,
+   "max_chars": 16,
+   "val_fraction": 0.05,
+   "word_min_freq": 2,
+   "vocab_size": 50000
+  },
+  "model": {
+   "embedding": "mance",
+   "char_pool": "transformer",
+   "char_positions": false,
+   "char_dim": 100,
+   "dim": 512,
+   "heads": 8,
+   "char_layers": 4,
+   "word_layers": 2,
+   "ff_dim": 1024,
+   "dropout": 0.3
+  },
+  "train": {
+   "batch_size": 64,
+   "eval_batch_size": 256,
+   "lr": 0.0001,
+   "warmup_steps": 1000,
+   "grad_clip": 1.0,
+   "epochs": 20,
+   "patience": 3
+  },
+  "oov": {
+   "fraction": 0.1,
+   "seed": 0,
+   "lexicon": "dbpedia",
+   "min_count": 20
+  }
+ },
+ "device": "NVIDIA GeForce RTX 4090",
+ "torch": "2.9.1+cu128",
+ "python": "3.12.3",
+ "git": "e9b231c-dirty",
+ "dataset_revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+ "minutes": 43.3,
+ "finished": "2026-10-17T15:03:59"
+}
