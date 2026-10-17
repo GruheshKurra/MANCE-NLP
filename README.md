@@ -1,12 +1,27 @@
-# MANCE-NLP
+# MANCE: Morphology-Aware Nested Character Embeddings for Word Representation
 
-**Morphologically Aware Neural Character Embeddings for Natural Language Processing**
+Code accompanying the paper **"Morphology-Aware Nested Character Embeddings for Word Representation"** (Kurra, Moparthi, Chowdary, Pagadala), IEEE ICCCMLA 2025, published in IEEE Xplore: [document 11580466](https://ieeexplore.ieee.org/document/11580466).
 
-A PyTorch implementation of the MANCE method for character-level text processing that achieves better morphological awareness and out-of-vocabulary handling compared to traditional word-level approaches.
+Each word is represented as an ordered sequence of character embeddings drawn from a vocabulary of about 100 characters, so morphological variants (plural, tense, superlative) share most of their representation and unseen words never fall back to an unknown token.
+
+## Paper results
+
+From the published paper (Transformer encoder variant):
+
+| Task | Metric | MANCE |
+|---|---|---|
+| AG News | Accuracy | 93.5% |
+| DBpedia | Accuracy | 99.0% |
+| GermEval 2014 (German NER) | F1 | 81.3 |
+
+- **Robustness to unseen variants:** with 10% of test words replaced by morphological variants not seen in training, accuracy dropped by as little as 1.3%, against 7–9% for word-level embeddings.
+- **Character order matters:** removing character order cost 1.7 points on AG News (93.5% to 91.8%).
+
+**What this repository contains:** a compact BiLSTM implementation of the MANCE idea with a Word2Vec baseline and a small demonstration comparison. The code for the full AG News, DBpedia and GermEval experiments reported in the paper is not in this repository yet.
 
 ## Overview
 
-MANCE (Morphologically Aware Neural Character Embeddings) is a neural approach that processes text at the character level to create word representations that are inherently aware of morphological relationships. This approach offers several advantages over traditional word-level embeddings:
+MANCE is a neural approach that processes text at the character level to create word representations that are inherently aware of morphological relationships. This approach offers several advantages over traditional word-level embeddings:
 
 - **Morphological Awareness**: Naturally captures relationships between word variants (e.g., "run", "running", "runner")
 - **OOV Handling**: Can represent any word, even those not seen during training
@@ -87,11 +102,10 @@ The MANCE architecture consists of three main components:
 └── README.md               # This file
 ```
 
-## Results
+## Demo results
 
-The MANCE method demonstrates:
+`compare_methods.py` runs a small demonstration on morphological-variant sentences. It is a sanity check of the idea, not a benchmark; the benchmark numbers are in [Paper results](#paper-results).
 
-- Improved handling of morphological variants
-- Better out-of-vocabulary word processing
-- Reduced vocabulary size requirements
-- Competitive or improved accuracy on text classification tasks
+## Citation
+
+Kurra, G. S. S. K., Moparthi, C., Chowdary, P. M., and Pagadala, P. K. Morphology-Aware Nested Character Embeddings for Word Representation. IEEE ICCCMLA 2025. IEEE Xplore document 11580466.
